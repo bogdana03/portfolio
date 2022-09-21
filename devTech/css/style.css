@@ -53,9 +53,6 @@ header .row .col-md-7{
     padding-top: 15vmin;
 }
 
-
-
-
 header .container.col-md-7 h2{
     padding: 1vmin;
     letter-spacing: 4px;
@@ -65,5 +62,15 @@ header .container.col-md-7 h2{
 }
 
 header .container.col-md-7 p{
+   padding: 1vmin 5vmin;
+}
 
+header .container .row{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn.btn-light {
+    border-radius: 30px;
+    font-weight: bold;
 }
