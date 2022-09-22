@@ -109,6 +109,43 @@ header .container .row{
 /*SECTION 2*/
 
 .cover{
-    width: 100%;
+    width: 100vw;
     height: 55vmin;
+    /*background:url("../images/banner-img1.png");*/
+    background-color: rgb(251, 216, 110);
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+
 }
+
+.cover.content{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+    text-align: center;
+}
+
+.cover .content>h1{
+   font-size: 6vmin;
+   padding-top: 10vmin;
+}
+
+.cover .content > p{
+   font-size: 3vmin;
+}
+
+.numbers .rectang{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top:3.5vmin;
+    margin: 1rem;
+    border-radius:.5em;
+    box-shadow: 1px 2px 50px 0px rgba(94, 80, 80, 0.3);
+
+}
+
