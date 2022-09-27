@@ -188,7 +188,7 @@ header .container .row{
     background: rgba(153, 182, 182, 0.1);
 }
 
-/*section 3*/
+/*SECTION 3*/
 .section-3{
     height: 50vmin;
     margin-top: 6vmin;
@@ -217,3 +217,30 @@ header .container .row{
     font-size: 3vmin;
 }
 
+/*SECTION 4*/
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 10vmin;
+}
+
+.section-4 .team{
+    padding: 8vmin;
+}
+
+.section-4 .card{
+    width: 17rem;
+    margin-top: 0vmin;
+}
+
+.section-4 .card .card-text{
+    padding: 0.5em;
+}
+
+.section-4 .carousel-item{
+    padding-left: 3rem;
+}
+
+.border-radius{
+    border-radius: 340px;
+    width: 100%;
+}
