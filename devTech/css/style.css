@@ -174,4 +174,38 @@ header .container .row{
      padding-bottom: 0.1em;
 }
 
+.purchase>p{
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards .title{
+    background: rgba(153, 182, 182, 0.1);
+}
+
+/*section 3*/
+.section-3{
+    height: 50vmin;
+    margin-top: 6vmin;
+    background-color: rgb(252, 245, 219);
+}
+
+.section-3 .col-md-12 >h3{
+    padding: 2em 0.5em 0;
+    color: black;
+    font-size: 6vmin;
+}
+
+.section-3 .desktop{
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 0.4vmin 1.5vmin;
+    margin: 1em;
+}
 
