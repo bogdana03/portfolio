@@ -2,6 +2,8 @@
 
 let navbar= $(".navbar");
 
+/**scroll for the window*/ 
 $(window).scroll(function(){
-    console.log(window.innerHeight);
+    let oTop = $(".section-2").offset().top-window.innerHeight;
+    console.log(oTop);
 });
