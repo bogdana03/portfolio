@@ -268,3 +268,13 @@ footer .input-group .input-group-text{
     background:rgb(252, 245, 219);
     border: none;
 }
+
+/*Sticky class*/
+.sticky{
+    position: fixed;
+    width: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
