@@ -12,3 +12,9 @@ $(window).scroll(function(){
      navbar.removeClass("sticky");
     }
 });
+
+/**Counter Animation */
+
+let nCount = function(selector){
+    $(selector)
+}
