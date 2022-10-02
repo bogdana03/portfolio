@@ -16,5 +16,17 @@ $(window).scroll(function(){
 /**Counter Animation */
 
 let nCount = function(selector){
-    $(selector)
-}
+    $(selector).each(function(){
+       $(this).animate({
+         Counter:$(this).text()
+       },{
+          duration: 4000,
+          easing: "swing",
+          step: function(value){
+            $(this).text(Math.ceil(value))
+          }
+        }
+       );
+      });
+      };
+    
