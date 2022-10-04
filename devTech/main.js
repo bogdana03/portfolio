@@ -31,6 +31,7 @@ let nCount = function(selector){
   });
 };
 
+/**Scroll for animated*/
 let a = 0;
 $(window).scroll(function(){
   let oTop = $(".numbers").offset().top-window.innerHeight;
