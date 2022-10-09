@@ -40,4 +40,30 @@ $(window).scroll(function(){
     nCount(".rectang>h1");
   }
 })
-    
+
+/**EmailJs */
+function sendmail() {
+  let fullName = document.getElementById("name").value;
+  let userEmail = document.getElementById("email").value;
+  let userMessage = document.getElementById("message").value;
+
+      var contactParams = {
+          from_name: fullName,
+          from_email: userEmail,
+          message: userMessage
+        };
+
+      const serviceID = 'default_service';
+      const templateID = 'template_gwm6euq';
+
+    emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+
+  };
+      
