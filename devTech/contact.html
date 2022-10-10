@@ -91,17 +91,17 @@
             <div class="panel text-left">
               <h3>Design & Development</h3>
               <div style="display: flex; align-items: center; justify-content: center;">
-                <form>
+                <form id="form">
                     <div class="form-group">
                         <label for="fname">Full Name :</label>
-                        <input class="form-control" type="text" id="name" name="fullname" placeholder="Your full name...">
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Your full name...">
         
                         <label for="email">Email :</label>
                         <input class="form-control" type="text" id="email" name="email" placeholder="Your email...">
         
                         <label for="message">Type your Message :</label>
                         <textarea class="form-control textarea" id="message" rows="3" placeholder="Your message..."></textarea><br>
-                        <input onclick='sendmail()' class='btn btn-primary contact-send-button' value='Send'>
+                        <input type="button" id="buton" onclick='sendmail()' class='btn btn-primary contact-send-button' value='Send Email'>
                     </div>
                 </form>
               </div>

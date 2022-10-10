@@ -42,6 +42,8 @@ $(window).scroll(function(){
 })
 
 /**EmailJs */
+let btn = document.getElementById('button');
+const form = document.getElementById('form');
 function sendmail() {
   let fullName = document.getElementById("name").value;
   let userEmail = document.getElementById("email").value;
@@ -49,14 +51,14 @@ function sendmail() {
 
       var contactParams = {
           from_name: fullName,
-          from_email: userEmail,
+          email: userEmail, 
           message: userMessage
         };
 
       const serviceID = 'default_service';
       const templateID = 'template_gwm6euq';
-
-    emailjs.sendForm(serviceID, templateID, this)
+      
+    emailjs.sendForm(serviceID, templateID, form)
     .then(() => {
       btn.value = 'Send Email';
       alert('Sent!');
