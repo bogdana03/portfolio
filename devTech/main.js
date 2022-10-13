@@ -42,30 +42,26 @@ $(window).scroll(function(){
 })
 
 /**EmailJs */
-let btn = document.getElementById('button');
+let buton = document.getElementById('button');
 const form = document.getElementById('form');
 function sendmail() {
   let fullName = document.getElementById("name").value;
   let userEmail = document.getElementById("email").value;
   let userMessage = document.getElementById("message").value;
 
-      var contactParams = {
-          from_name: fullName,
-          email: userEmail, 
-          message: userMessage
-        };
+     
+      
 
       const serviceID = 'default_service';
       const templateID = 'template_gwm6euq';
       
     emailjs.sendForm(serviceID, templateID, form)
     .then(() => {
-      btn.value = 'Send Email';
+      buton.value = 'Send';
       alert('Sent!');
     }, (err) => {
-      btn.value = 'Send Email';
+      buton.value = 'Send';
       alert(JSON.stringify(err));
     });
 
   };
-      
