@@ -1,0 +1,105 @@
+<style>
+  #calc
+  {
+    background-color: #cccccc;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    align-self:center;
+}
+  .calccell
+  {
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+
+  }
+  .calcdispaly
+  {
+    background-color: #eeeeee;
+    font-family: Arial;
+    font-size: 30px;
+    color: #000000;
+    
+}
+.calcbutton
+{
+    background-color: #999999;
+    font-family: Arial;
+    font-size: 12px;
+    color: #000000;
+    width: 70px;
+    height: 60px;
+    padding: auto;
+}
+
+</style>
+
+
+
+
+<script lanuage="JavaScript">
+    function resetDisplay(){
+     document.calc.display.value="";
+     
+    }
+    function updateDisplay(invalue)
+    {
+        document.calc.display.value= document.calc.display.value + invalue;
+    }
+    function calculate()
+    {
+        document.calc.display.value= eval(document.calc.display.value);
+    }
+    </script>
+
+   
+    
+    
+    <form name="calc">
+    <table border="1" id="calc">
+     <tr>
+     <td class="calccell" colspan="4"><input  class="calcdispaly" name="display" type="text" value="" /></td>
+     </tr>
+     <tr>
+     <td class="calccell" ><input style="width: 70px;" class="calcdispaly"  type="button" value="C" onClick="resetDisplay('/')" /></td>
+     <td></td>
+     <td></td>
+     <td class="calccell" ><input style="width: 70px;" class="calcdispaly"  type="button" value="/" /></td>
+     </tr>
+     <tr>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="7" onclick=" updateDisplay('7')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="8" onclick=" updateDisplay('8')"  /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="9" onclick=" updateDisplay('9')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="*" onclick=" updateDisplay('*')" /></td>
+     </tr>
+     <tr>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="4" onclick=" updateDisplay('4')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="5" onclick=" updateDisplay('5')" /></td>
+     <td class="calccell" > <input class="calcbutton" type="button" value="6" onclick="updateDisplay('6')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="-" onclick=" updateDisplay('-')" /></td>
+     </tr>
+     <tr>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="1" onclick=" updateDisplay('1')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="2" onclick=" updateDisplay('2')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="3" onclick=" updateDisplay('3')" /></td>
+     <td class="calccell" ><input  class="calcbutton" type="button" value="+" onclick=" updateDisplay('+')" /></td>
+    </tr>
+    <tr>
+     <td><input class="calcbutton" type="button" value="0" onclick=" updateDisplay('0')" /></td>
+     <td></td>
+     <td></td>
+     <td><input class="calcbutton" type="button" value="="  onclick="calculate()" /></td>
+    </tr>
+    
+    </table>
+    
+    </form>
+    
+    
+
+
+
+
