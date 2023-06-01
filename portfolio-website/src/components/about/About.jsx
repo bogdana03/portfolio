@@ -1,0 +1,13 @@
+import React from 'react'
+import './about.css'
+
+
+const About = () => {
+  return (
+    <div>
+      <p>about</p>
+    </div>
+  )
+}
+
+export default About
