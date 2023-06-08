@@ -3,10 +3,8 @@ import './experience.css'
 
 const Experince = () => {
   return (
-    <div>
-      <p>Experience</p>
-    </div>
-  )
+   <section id='experience'>Experience</section>
+   )
 }
 
 export default Experince
