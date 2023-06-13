@@ -2,6 +2,7 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/me.jpg'
 import {AiOutlineProject} from 'react-icons/ai'
+import {BsBook} from 'react-icons/bs'
 
 
 const About = () => {
@@ -21,15 +22,22 @@ const About = () => {
           <article className='about_card'>
             <AiOutlineProject className='about_icon'/>
             <h5>Projects</h5>
-            <small>Completed</small>
           </article>
 
           <article className='about_card'>
-            <AiOutlineProject className='about_icon'/>
-            <h5>Projects</h5>
-            <small>Completed</small>
+            <BsBook className='about_icon'/>
+            <h5>Experience</h5>
           </article>
-        </div>   
+        </div> 
+
+        <span>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Amet beatae, omnis officiis alias commodi cumque in placeat accusamus praesentium blanditiis 
+          reprehenderit accusantium ab tenetur reiciendis vitae sit dolor sequi. 
+          Reiciendis.
+        </span>  
+
+        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
       </div>
     </div>
    </section>
