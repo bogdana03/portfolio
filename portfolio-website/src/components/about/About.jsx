@@ -30,12 +30,12 @@ const About = () => {
           </article>
         </div> 
 
-        <span>
+        <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Amet beatae, omnis officiis alias commodi cumque in placeat accusamus praesentium blanditiis 
           reprehenderit accusantium ab tenetur reiciendis vitae sit dolor sequi. 
           Reiciendis.
-        </span>  
+        </p>  
 
         <a href="#contact" className='btn btn-primary'>Let's Talk</a>
       </div>
