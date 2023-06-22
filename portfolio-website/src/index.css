@@ -21,8 +21,8 @@
     --color-light: #ffffffb3;
 
     --container-with-lg: 75%;
-    --container-width: 86%;
-    --contanier-width: 90%;
+    --container-width-md: 86%;
+    --contanier-width-sm: 90%;
 }
 
 html {
@@ -64,7 +64,7 @@ h1 {
 }
  section {
     margin-top: 8rem;
-    height: 100vh;
+    
  }
 
  /* direct child of section (h2)*/
